@@ -17,7 +17,8 @@ body{
     --border-bottom-color: #383a4f;
     --checkbox-color: #34364b;
     --placeholder-color: #61637a;
-    --boxshadow-color: #12141f;    
+    --boxshadow-color: #12141f;
+    --strikethrough-color: #4d4f64;    
 }
 .light-theme{
     --primary-color: #fafafa;
@@ -29,6 +30,7 @@ body{
     --checkbox-color: #d4d3d6;
     --placeholder-color: #9898a3;
     --boxshadow-color: #e8e8e8;
+    --strikethrough-color: #d3d3d4;
 }
 .container{
     width: 460px;
@@ -108,7 +110,10 @@ label::before {
 input[type="checkbox"]:checked + label::before{
     transform: scale(1) rotateZ(0deg);
 }
-
+input[type="checkbox"]:checked + label{
+    text-decoration: line-through;
+    color: var(--strikethrough-color);
+}
 label::after{
     content: "";
     border: 1px solid var(--checkbox-color);
