@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Todo List App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_top">
+            <h1>TODO</h1>
+            <div><img src="images/icon-sun.svg" alt="background_toggle_icon"></div>
+        </div>
+        <div class="task_inserter">
+            <div class="toptask">
+                <span>
+                    <input type="checkbox" name="create_todo" id="create_todo">
+                    <label for="create_todo"></label>
+                    <input type="text" id="newtask" placeholder="Create a new todo...">
+                </span>
+            </div>
+            <div class="taskdisplay">
+                <div class="task">
+                    <span><input type="checkbox" name="check_task" id="task1"><label for="task1">Complete online JavaScript course</label></span>
+                    <span><img src="images/icon-cross.svg" alt="icon-cross"></span>
+                </div>
+                <div class="task">
+                    <span><input type="checkbox" name="check_task" id="task2"><label for="task2">Jog round the park 3x</label></span>
+                    <span><img src="images/icon-cross.svg" alt="icon-cross"></span>
+                </div>
+                <div class="task">
+                    <span><input type="checkbox" name="check_task" id="task3"><label for="task3">10 minutes meditation</label></span>
+                    <span><img src="images/icon-cross.svg" alt="icon-cross"></span>
+                </div>
+                <div class="task">
+                    <span><input type="checkbox" name="check_task" id="task4"><label for="task4">Read for 1 hour</label></span>
+                    <span><img src="images/icon-cross.svg" alt="icon-cross"></span>
+                </div>
+                <div class="task">
+                    <span><input type="checkbox" name="check_task" id="task5"><label for="task5">Pick up groceries</label></span>
+                    <span><img src="images/icon-cross.svg" alt="icon-cross"></span>
+                </div>
+                <div class="task">
+                    <span><input type="checkbox" name="check_task" id="task6"><label for="task6">Complete ToDo App from FrontendMentor</label></span>
+                    <span><img src="images/icon-cross.svg" alt="icon-cross"></span>
+                </div>
+                <div class="bottom_control">
+                    <p id="item_count">1 item left</p>
+                    <ul>
+                        <li class="active_toggle">All</li>
+                        <li>Active</li>
+                        <li>Completed</li>
+                    </ul>
+                    <p id="clear_completed">Clear Completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
