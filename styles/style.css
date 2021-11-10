@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 body{
     font-family: 'Josefin Sans', sans-serif;
-    background: url(./images/bg-desktop-dark.jpg), var(--primary-color);
+    background: url("../images/bg-desktop-dark.jpg"), var(--primary-color);
     background-repeat: no-repeat;
     background-size: 100% 250px;
     margin: 0;
@@ -96,7 +96,7 @@ label::before {
     content: "";
     width: 18px;
     height: 18px;
-    background: url("./images/icon-check.svg"), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background: url("../images/icon-check.svg"), linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
