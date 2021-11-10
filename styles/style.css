@@ -247,6 +247,6 @@ label:hover::after{
         padding: 0px 10px;
     }
     .attribution{
-        margin: 90px 0px 0px;
+        margin: 90px 0px 20px;
     }
 }
