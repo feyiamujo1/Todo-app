@@ -57,7 +57,7 @@ body{
     margin-top: 20px;
 }
 .toptask{
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: var(--secondary-color);
     margin-bottom: 20px;
     display: flex;
@@ -76,6 +76,7 @@ body{
     color: var(--primary-text-color);
     caret-color: #4773d8;
     padding: 0px;
+    width: 360px;
 }
 #newtask::placeholder{
     color: var(--placeholder-color);
@@ -87,7 +88,7 @@ input[type="checkbox"] {
 label {
     margin-left: 35px;
     position: relative;
-    
+    line-height: 1.4;
 }
 label:hover{
     cursor: pointer;
@@ -132,7 +133,7 @@ label:hover::after{
 }
 .taskdisplay{
     background-color: var(--secondary-color);
-    border-radius: 3px;
+    border-radius: 4px;
     color: var(--primary-text-color);
     box-shadow: 0 25px 20px var(--boxshadow-color);
 }
@@ -140,12 +141,14 @@ label:hover::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
     border-bottom: 1px solid var(--border-bottom-color);
-    padding: 0px 20px;
+    padding: 12px 20px;
 }
 .task{
     cursor: pointer;
+}
+.task .textpart{
+    width: 400px;
 }
 .task .btn_cancel{
     height: 15px;
@@ -185,4 +188,65 @@ label:hover::after{
 .active_toggle{
     color: #3e70d9;
 }
+.attribution { font-size: 11px; text-align: center; margin: 20px 0px;}
+        .attribution a { color: hsl(228, 45%, 44%); }
+        .attribution_container{width: 100%; margin-top:20px;}
 
+
+@media only screen and (max-width: 768px) {
+    body{
+        background: url("../images/bg-mobile-dark.jpg"), var(--primary-color);
+        background-repeat: no-repeat;
+        background-size: 100% 220px;
+    }
+    .container{
+        margin-top: 30px;
+        width: 330px;
+    }
+    #newtask{
+        font-size: 12px;
+    }
+    label{
+        font-size: 12px;
+        
+    }
+    .picture_part{
+        display: block;
+    }
+    #newtask{
+        width: 240px;
+    }
+    .task{
+        padding: 15px 20px;
+    }
+    .task .textpart{
+        width: 270px;
+    }
+    .bottom_control{
+        justify-content: space-between;
+        padding-top: 5px
+    }
+    .bottom_control #item_count{
+        padding-left: 23px;
+    }
+    .bottom_control #clear_completed{
+        padding-right: 20px;
+    }
+    .bottom_control ul{
+        position: absolute;
+        width: 330px;
+        padding: 15px 0px;
+        margin: 55px 0px 0px;
+        font-size: 16px;
+        justify-content: center;
+        background-color: var(--secondary-color);
+        border-radius: 4px;
+        box-shadow: 0 25px 20px var(--boxshadow-color);
+    }
+    .bottom_control ul li{
+        padding: 0px 10px;
+    }
+    .attribution{
+        margin: 90px 0px 0px;
+    }
+}
