@@ -143,8 +143,6 @@ label:hover::after{
     align-items: center;
     border-bottom: 1px solid var(--border-bottom-color);
     padding: 12px 20px;
-}
-.task{
     cursor: pointer;
 }
 .task .textpart{
@@ -178,21 +176,23 @@ label:hover::after{
     list-style: none;
     padding: 0px 5px;
 }
-.bottom_control li:hover, #clear_completed:hover{
+.bottom_control a:hover, #clear_completed:hover{
     color: var(--secondary-text-color);
     cursor: pointer;
+}
+.bottom_control a{
+    color: var(--main-secondary-text-color);
+    text-decoration: none;
 }
 #item_count{
     cursor: default;
 }
-.active_toggle{
+.active_toggle a{
     color: #3e70d9;
 }
 .attribution { font-size: 11px; text-align: center; margin: 20px 0px;}
-        .attribution a { color: hsl(228, 45%, 44%); }
-        .attribution_container{width: 100%; margin-top:20px;}
-
-
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution_container{width: 100%; margin-top:20px;}
 @media only screen and (max-width: 768px) {
     body{
         background: url("../images/bg-mobile-dark.jpg"), var(--primary-color);

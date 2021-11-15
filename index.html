@@ -16,42 +16,42 @@
         <div class="task_inserter">
             <div class="toptask">
                 <span>
-                    <input type="checkbox" name="create_todo" id="create_todo">
+                    <input type="checkbox" name="create_todo" id="create_todo" onclick="createNewTask()">
                     <label for="create_todo"></label>
                     <input type="text" id="newtask" placeholder="Create a new todo...">
                 </span>
             </div>
             <div class="taskdisplay">
                 <div class="task">
-                    <span class="textpart"><input type="checkbox" name="check_task" id="task1"><label for="task1">Complete online JavaScript course</label></span>
+                    <span class="textpart"><input class="checkbutton" type="checkbox" name="check_task" id="task1"><label for="task1">Complete online JavaScript course</label></span>
                     <span class="picture_part"><img class="btn_cancel" src="images/icon-cross.svg" alt="icon-cross"></span>
                 </div>
                 <div class="task">
-                    <span class="textpart"><input type="checkbox" name="check_task" id="task2"><label for="task2">Jog round the park 3x</label></span>
+                    <span class="textpart"><input class="checkbutton" type="checkbox" name="check_task" id="task2"><label for="task2">Jog round the park 3x</label></span>
                     <span class="picture_part"><img class="btn_cancel" src="images/icon-cross.svg" alt="icon-cross"></span>
                 </div>
                 <div class="task">
-                    <span class="textpart"><input type="checkbox" name="check_task" id="task3"><label for="task3">10 minutes meditation</label></span>
+                    <span class="textpart"><input class="checkbutton" type="checkbox" name="check_task" id="task3"><label for="task3">10 minutes meditation</label></span>
                     <span class="picture_part"><img class="btn_cancel" src="images/icon-cross.svg" alt="icon-cross"></span>
                 </div>
                 <div class="task">
-                    <span class="textpart"><input type="checkbox" name="check_task" id="task4"><label for="task4">Read for 1 hour</label></span>
+                    <span class="textpart"><input class="checkbutton" type="checkbox" name="check_task" id="task4"><label for="task4">Read for 1 hour</label></span>
                     <span class="picture_part"><img class="btn_cancel" src="images/icon-cross.svg" alt="icon-cross"></span>
                 </div>
                 <div class="task">
-                    <span class="textpart"><input type="checkbox" name="check_task" id="task5"><label for="task5">Pick up groceries</label></span>
+                    <span class="textpart"><input class="checkbutton" type="checkbox" name="check_task" id="task5"><label for="task5">Pick up groceries</label></span>
                     <span class="picture_part"><img class="btn_cancel" src="images/icon-cross.svg" alt="icon-cross"></span>
                 </div>
                 <div class="task">
-                    <span class="textpart"><input type="checkbox" name="check_task" id="task6"><label for="task6">Complete ToDo App on FrontendMentor</label></span>
+                    <span class="textpart"><input class="checkbutton" type="checkbox" name="check_task" id="task6"><label for="task6">Complete ToDo App on FrontendMentor</label></span>
                     <span class="picture_part"><img class="btn_cancel" src="images/icon-cross.svg" alt="icon-cross"></span>
                 </div>
                 <div class="bottom_control">
-                    <p id="item_count">1 item left</p>
+                    <p id="item_count">0 item left</p>
                     <ul>
-                        <li class="active_toggle">All</li>
-                        <li>Active</li>
-                        <li>Completed</li>
+                        <li class="task_toggle active_toggle" onclick="displayAll()"><a href="#">All</a></li>
+                        <li class="task_toggle" onclick="showActiveTodo()"><a href="#">Active</a></li>
+                        <li class="task_toggle" onclick="showCompletedTodo()"><a href="#">Completed</a></li>
                     </ul>
                     <p id="clear_completed">Clear Completed</p>
                 </div>
